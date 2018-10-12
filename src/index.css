@@ -1,0 +1,18 @@
+*
+{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body, html
+{
+  font-family: rambla;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+html
+{
+  background-color: grey;
+  width: 100%;
+}

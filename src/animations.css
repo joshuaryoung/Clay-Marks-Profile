@@ -1,0 +1,118 @@
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 700ms ease-in;
+}
+
+.fade-exit {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  z-index: 1;
+  transition: opacity 700ms ease-out;
+}
+
+.shrink-enter {
+  z-index: 1;
+}
+
+.shrink-enter.shrink-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 700ms ease-in;
+}
+
+.shrink-exit {
+  /*opacity: 0;*/
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  transform: scale(0);
+  z-index: 1;
+  transition: transform 700ms ease-in;
+}
+
+.psychadelic-shrink-enter {
+  opacity: 0;
+  transform: scale(6);
+  z-index: 1;
+}
+
+.psychadelic-shrink-enter.psychadelic-shrink-enter-active {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 700ms ease-out;
+}
+
+.psychadelic-shrink-exit {
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  transform: scale(0);
+  z-index: 1;
+  transition: transform 700ms ease-out;
+}
+
+.expand-enter {
+  transform: scale(0);
+  z-index: 2;
+}
+
+.expand-enter.expand-enter-active {
+  transform: scale(1);
+  transition: transform 700ms ease-out;
+  z-index: 2;
+}
+
+.expand-exit
+{
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  z-index: 1;
+}
+
+.psychadelic-expand-enter {
+  transform: scale(0);
+  z-index: 2;
+}
+
+.psychadelic-expand-enter.psychadelic-expand-enter-active {
+  transform: scale(1);
+  transition: transform 1500ms ease-out;
+  z-index: 2;
+}
+
+.psychadelic-expand-exit
+{
+  transform: scale(10);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  z-index: 1;
+  transition: all 1500ms ease-out;
+}
+
+.wipe-left-exit {
+  /*opacity: 0;*/
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  transform: translate(-88vw, 1vh);
+  transition: transform 450ms ease-in;
+}
+
+.wipe-down-exit {
+  /*opacity: 0;*/
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  transform: translate(0, 100%);
+  transition: transform 450ms ease-in;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FEFG from './PDF/FEFG.pdf';
+import TLD from './PDF/TLD.pdf';
 import PDFsvg from './IMG/PDF.svg';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
@@ -20,32 +20,32 @@ class Page extends Component {
     this.toggle = this.toggle.bind(this);
   }
 
-  toggle() {
+  toggle () {
     this.setState({
       open: !this.state.open
     });
   }
 
-  handleShow(body, footer, title, cssClass) {
+  handleShow (body, footer, title, cssClass) {
     this.setState({ open: !this.state.open, body: body, footer: footer, title: title, cssClass: cssClass });
   }
 
-  render() {
+  render () {
 
     const modal00 =
     {
-      body:(
+      body: (
         <p>
-          Three very short narratives about thinly veiled public figures who are dead. The common thread is that they all have secrets, albeit secrets that are easy to recognize should the reader choose not to suppress readily apparent evidence. Astute readers will discover sobering riddles between the written lines.
+          It is wasted energy to question the truthfulness of this latter-day epistle.
         </p>
       ),
       footer:
         <div>
-          <a className="PDF-img-a" target="_blank" href={FEFG}>
+          <a className="PDF-img-a" target="_blank" href={TLD}>
             <img src={PDFsvg} />
           </a>
         </div>,
-      title: 'FICTITIOUS EPISTLES FROM THE GRAVE',
+      title: 'The Little Dipper',
       cssClass: 'page-modal00'
     }
 
@@ -53,15 +53,15 @@ class Page extends Component {
 
       <div class="pageBody">
 
-        <div className="page-image-container" onClick = {this.handleShow.bind(this, modal00.body, modal00.footer, modal00.title, modal00.cssClass)}>
+        <div className="page-image-container" onClick={this.handleShow.bind(this, modal00.body, modal00.footer, modal00.title, modal00.cssClass)}>
           <div className="page-image-text" >
             {modal00.title}
           </div>
         </div>
 
-        <Modal isOpen = {this.state.open} toggle = {this.handleShow} className = {'modalPageAll ' + this.state.cssClass}>
+        <Modal isOpen={this.state.open} toggle={this.handleShow} className={'modalPageAll ' + this.state.cssClass}>
           <ModalHeader toggle={this.toggle}>
-            <h5 className = "modal-title">{this.state.title}</h5>
+            <h5 className="modal-title">{this.state.title}</h5>
           </ModalHeader>
           <ModalBody>
             {this.state.body}

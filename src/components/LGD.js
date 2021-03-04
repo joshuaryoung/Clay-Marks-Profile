@@ -61,6 +61,10 @@ class LGD extends Component {
   }
 
   handleShow (body, title, src) {
+    if (this.state.open) {
+      this.toggle();
+      return;
+    }
     this.setState({ open: !this.state.open, body: body, title: title, src: src });
   }
 

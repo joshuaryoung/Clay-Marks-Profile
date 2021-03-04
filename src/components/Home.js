@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Home extends Component {
-  render() {
+  render () {
     return (
 
       <body className="homeBody">
@@ -12,7 +12,7 @@ class Home extends Component {
             <h1>Clay Marks</h1>
           </div>
           <div id="Body-Text3">
-            <h3>STORYTELLER<br />POLEMICAL POET<br />SCREENWRITER</h3>
+            <h3>STORYTELLER<br />POET<br />SCREENWRITER</h3>
           </div>
 
           <div id="Body-Image-Container">

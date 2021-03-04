@@ -44,6 +44,9 @@ html
 
 .screenBody
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url("./components/Camp_fireAdjusted.jpg");
   background-position-x: center;
   width: 100%;
@@ -423,8 +426,8 @@ nav a:hover
 .screenModalAll
 {
   margin: auto;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
+  /* margin-top: 1vh;
+  margin-bottom: 1vh; */
   max-width: 98%;
 }
 
@@ -866,7 +869,6 @@ nav a:hover
   .table-cell-text
   {
     transition-property: transform;
-    cursor: default;
     font-size: 23px;
     font-family: 'Amatic SC', cursive;
   }
@@ -890,6 +892,7 @@ nav a:hover
     transition: all .25s ease-out;
     padding: 0% 1% 0% 1%;
     box-shadow: 12px 12px 3px rgba(0,0,0,.5);
+    cursor: pointer;
   }
 
   .table-cell p
@@ -904,9 +907,6 @@ nav a:hover
 
   .modalAll
   {
-    margin: auto;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
     max-width: 60vw;
   }
 
@@ -991,16 +991,13 @@ nav a:hover
   #Body-Table-Container
   {
     display: flex;
-    position: relative;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 44vh;
     background-color: rgba(0,0,0,.5);
     width: 34vw;
     margin: auto;
     border-radius: 16px;
     box-shadow: 4px 4px 11px rgba(0,0,0,.5);
-    top: 25vh;
     align-items: center;
   }
 
@@ -1011,7 +1008,7 @@ nav a:hover
     flex-direction: row;
     justify-content: space-around;
     width: 90%;
-    height: 45%;
+    height: 175px;
     align-items: center;
   }
 
@@ -1244,6 +1241,16 @@ nav a:hover
   .screen-modal06 .modal-content
   {
     min-height: 98%;
+  }
+
+  .stage-PDF-img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .stage-PDF-img img{
+    width: 75px;
   }
 
   .modalAll p

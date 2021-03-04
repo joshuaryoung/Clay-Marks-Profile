@@ -27,6 +27,10 @@ class Page extends Component {
   }
 
   handleShow (body, footer, title, cssClass) {
+    if (this.state.open) {
+      this.toggle();
+      return;
+    }
     this.setState({ open: !this.state.open, body: body, footer: footer, title: title, cssClass: cssClass });
   }
 

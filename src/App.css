@@ -834,6 +834,12 @@ nav a:hover
     transition: all .25s ease-out;
   }
 
+  .stage-PDF-img img:hover
+  {
+    transform: scale3d(1, 1, 1);
+    transition: all .25s ease-out;
+  }
+
   #Body-Text-Screen
   {
     padding-bottom: 2vh;
@@ -1250,6 +1256,8 @@ nav a:hover
   }
 
   .stage-PDF-img img{
+    transform: scale3d(.75, .75, 1);
+    transition: all .25s ease-out;
     width: 75px;
   }
 

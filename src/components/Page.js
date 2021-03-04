@@ -63,7 +63,7 @@ class Page extends Component {
           </div>
         </div>
 
-        <Modal isOpen={this.state.open} toggle={this.handleShow} className={'modalPageAll ' + this.state.cssClass}>
+        <Modal isOpen={this.state.open} centered={true} toggle={this.handleShow} className={'modalPageAll ' + this.state.cssClass}>
           <ModalHeader toggle={this.toggle}>
             <h5 className="modal-title">{this.state.title}</h5>
           </ModalHeader>

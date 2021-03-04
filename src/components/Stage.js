@@ -20,21 +20,21 @@ class Stage extends Component {
     this.toggle = this.toggle.bind(this);
   }
 
-  toggle() {
+  toggle () {
     this.setState({
       open: !this.state.open
     });
   }
 
-  handleShow(body, footer, title, cssClass) {
+  handleShow (body, footer, title, cssClass) {
     this.setState({ open: !this.state.open, body: body, footer: footer, title: title, cssClass: cssClass });
   }
 
-  render() {
+  render () {
 
     const modal00 =
     {
-      body:(
+      body: (
         <p>
           His esophagus full of regurgitated barbiturates and red wine, Jimi Hendrix asphyxiates and dies in a London apartment. In this one-act stage drama, he passes into a chamber where he is joined by three other historical characters: Leonardo daVinci, Carl Jung, and William Blake. Guided by the psychoanalyst Jung, Hendrix's new acquaintances engage him in a role-playing exercise, each participant portraying a member of the Godhead as they prepare their initiate to choose the direction of his rebirth.
         </p>
@@ -53,15 +53,15 @@ class Stage extends Component {
 
       <body class="stageBody">
 
-        <div className="stage-image-container" onClick = {this.handleShow.bind(this, modal00.body, modal00.footer, modal00.title, modal00.cssClass)}>
+        <div className="stage-image-container" onClick={this.handleShow.bind(this, modal00.body, modal00.footer, modal00.title, modal00.cssClass)}>
           <div className="stage-image-text" >
             {modal00.title}
           </div>
         </div>
 
-        <Modal isOpen = {this.state.open} toggle = {this.toggle} className = {'modalStageAll ' + this.state.cssClass}>
-          <ModalHeader toggle = {this.toggle}>
-            <h5 className = "modal-title">{this.state.title}</h5>
+        <Modal isOpen={this.state.open} centered={true} toggle={this.toggle} className={'modalStageAll ' + this.state.cssClass}>
+          <ModalHeader toggle={this.toggle}>
+            <h5 className="modal-title">{this.state.title}</h5>
           </ModalHeader>
           <ModalBody>
             {this.state.body}

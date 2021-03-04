@@ -931,13 +931,6 @@ nav a:hover
     padding: 1% 8%;
     margin-top: 3%;
   }
-
-  .modalPageAll
-  {
-    margin: auto;
-    margin-top: 18vh;
-    margin-bottom: 1vh;
-  }
   
   .modalPageAll .modal-header
   {
@@ -951,13 +944,6 @@ nav a:hover
     text-align: justify;
     padding: 1% 8%;
     margin-top: 3%;
-  }
-
-  .modalStageAll
-  {
-    margin: auto;
-    margin-top: 13vh;
-    margin-bottom: 1vh;
   }
 
   .modalStageAll .modal-header

@@ -94,6 +94,10 @@ html
   height: 100vh;
   margin: auto;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactBody
@@ -431,10 +435,6 @@ nav a:hover
   max-width: 98%;
 }
 
-.screenModalAll .modal-content
-{
-  background-color: rgba(255,255,255, 0.9);
-}
 .screenModalAll .modal-header
 {
   border-bottom: 1px solid #b7bdc3;
@@ -888,9 +888,9 @@ nav a:hover
 
   .table-cell
   {
-    width: 22%;
+    width: 175px;
     background-color: white;
-    height: 90%;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -911,15 +911,6 @@ nav a:hover
     min-height: 0;
   }
 
-  .modalAll
-  {
-    max-width: 60vw;
-  }
-
-  .modalAll .modal-content
-  {
-    background-color: rgba(255,255,255, 0.9);
-  }
   .modalAll .modal-header
   {
     border-bottom: 1px solid #b7bdc3;
@@ -946,13 +937,8 @@ nav a:hover
     margin: auto;
     margin-top: 18vh;
     margin-bottom: 1vh;
-    max-width: 30%;
   }
-
-  .modalPageAll .modal-content
-  {
-    background-color: rgba(255,255,255, 0.9);
-  }
+  
   .modalPageAll .modal-header
   {
     border-bottom: 1px solid #b7bdc3;
@@ -975,10 +961,6 @@ nav a:hover
     max-width: 33%;
   }
 
-  .modalStageAll .modal-content
-  {
-    background-color: rgba(255,255,255, 0.9);
-  }
   .modalStageAll .modal-header
   {
     border-bottom: 1px solid #b7bdc3;
@@ -1000,7 +982,6 @@ nav a:hover
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgba(0,0,0,.5);
-    width: 34vw;
     margin: auto;
     border-radius: 16px;
     box-shadow: 4px 4px 11px rgba(0,0,0,.5);
@@ -1013,9 +994,9 @@ nav a:hover
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 90%;
-    height: 175px;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   #Body-Table-Row2
@@ -1100,12 +1081,8 @@ nav a:hover
   .carousel-container
   {
     background-color: rgba(0,0,0,0.75);
-    height: 44vh;
-    margin: auto;
     border-radius: 7px;
-    position: relative;
-    top: 25vh;
-    width: 34vw;
+    max-width: min-content;
   }
 
   #carouselIndicators
@@ -1144,8 +1121,8 @@ nav a:hover
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 44vh;
     align-items: center;
+    padding: 21px;
   }
 
   #LGDBody-Table-Row1
@@ -1155,8 +1132,6 @@ nav a:hover
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    height: 45%;
   }
 
   #LGDBody-Table-Row2
@@ -1166,8 +1141,6 @@ nav a:hover
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    height: 45%;
   }
 
   #LGDBody-Table-Row11
@@ -1222,11 +1195,6 @@ nav a:hover
   .LGDtable-cell
   {
     display: inline-block;
-  }
-
-  .LGDmodalAll
-  {
-    margin-top: 11vh;
   }
 
   .modal-title{
